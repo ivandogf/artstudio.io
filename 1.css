@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* или contain, в зависимости от желаемого эффекта */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #EAE7DC;
+
+}
+/* Навигационная панель */
+nav {
+    background-color: #E85A4F;
+    display: flex; 
+    justify-content: center; 
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: #E85A4F;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color:  #D8C3A5;
+    transition: 0.3s;
+    padding-top: 20px;
+    z-index: 2; 
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #E98074;
+}
+
+.open-btn {
+    position: absolute;
+    top: 175px;  
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #E98074;
+    color: white;
+    border: none;
+
+}
+
+.sidebar:target {
+    left: 0;
+}
+
+
+.slider {
+    margin-top: -50pt;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 600px;
+    height: 750px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide img {
+    width: 500px;
+    height: 500px;
+    border-radius: 0px;
+    display: block;
+    margin-top: 25px;
+}
+
+.caption {
+    position: absolute;
+    left: 20px;
+    color: white;
+    background-color: rgba(204, 125, 21, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 80px;
+    right: 10px;
+}
+
+.prev, .next {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #E85A4F;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+/* Анимация */
+.container {
+    text-align: center;
+    padding: 5px;
+
+
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #D8C3A5;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* Форма заявки*/ 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .form_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D8C3A5;
+    height: auto;
+    width: auto;
+    border: 2px solid #264143;
+    border-radius: 20px;
+    box-shadow: 3px 4px 0px 1px #E85A4F;
+  }
+  
+  .title {
+    color: #EAE7DC;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  .sub_title {
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 15px;
+  }
+  
+  .form_style {
+    outline: none;
+    border: 2px solid #264143;
+    box-shadow: 3px 4px 0px 1px #E85A4F;
+    width: 290px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  .form_style:focus, .btn:focus {
+    transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px #E85A4F;
+  }
+  
+  .btn {
+    padding: 15px;
+    margin: 25px 0px;
+    width: 290px;
+    font-size: 15px;
+    background: #DE5499;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0px 0px #E85A4F;;
+  }
+  
+  .btn:hover {
+    opacity: .9;
+  }
+  
+  button {
+    background: #D8C3A5;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid #E85A4F;;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  button:active {
+    box-shadow: 0.05em 0.05em;
+  }
+  

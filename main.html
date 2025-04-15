@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Художесвенная студия, рисование, игрушки из шерсти,подделки,хобби.">
+    <title>Художесвенная студия</title>
+    <link rel="stylesheet" href="1.css">
+    <div style="background-color: #D8C3A5; color: #FFFF00 ; padding: 20px; text-align: center;">
+        <h1>Художественная школа  </h1>
+    </div>
+</head>
+<body>
+     
+    <nav>
+        <a href="#home">Главная</a>   
+        <a href="contact.html">Контакты</a>
+        <a href="racp.html">Расписание</a>
+        <a href="chena.html">Цены</a>
+        <a href="regictr.html">Записаться</a>
+    </nav>
+    <div style="padding: 100px">
+        <h4>В нашей студии каждый найдёт что-то для себя — будь то рисование, живопись или другие виды искусства. Мы верим, что творчество доступно каждому, и стремимся создать атмосферу, способствующую самовыражению и развитию художественных навыков.</h4>
+    </div>
+
+ <a href="#sidebar" class="open-btn">О занятиях</a>
+
+    <div id="sidebar" class="sidebar">
+        <a href="#close" class="closebtn">Закрыть</a>
+        <a href="drow.html">Живопись</a>
+        <a href="valinia.html">Валяние из шерсти</a>
+        <a href="head.html">Хендмейд</a>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="r.jpg" alt="Слайд 1">
+                <div class="caption">В нашей художественной студии мы предлагаем уникальную услугу рисования, которая подходит как для начинающих, так и для опытных художников</div>
+                <button onclick="window.location.href='drow.html'">Узнать подробнее</button>
+            <button onclick="window.location.href='regictr.html'">Записаться</button>
+            </div>
+            <div class="slide">
+                <img src="photo_2024-12-04_06-49-30.jpg" alt="Слайд 2">
+                <div class="caption">Валяние — это не только искусство, но и отличный способ расслабиться и насладиться творческим процессом.</div>
+                <button onclick="window.location.href='valinia.html'">Узнать подробнее</button>
+                <button onclick="window.location.href='regictr.html'">Записаться</button>
+            </div>
+            <div class="slide">
+                <img src="ОТКРЫТКА.png" alt="Слайд 3">
+                <div class="caption">Хендмейд — это не только увлекательное занятие, но и отличный способ провести время с друзьями и семьей.</div>
+                <button onclick="window.location.href='head.html'">Узнать подробнее</button>
+                <button onclick="window.location.href='regictr.html'">Записаться</button>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="container">
+        <h1 class="animate">Создай подарок для любимых своими руками</h1>
+        <p class="animate">Новый год -  Снеговик</p>
+        <img class="animate" src="57cda19b589c442a2ed2fd6eacebff98.jpg" wight="300" height="300"  alt="Пример изображения">
+        <p class="animate">Пасха</p>
+            <img class="animate" src="photo_2024-11-30_23-55-02.jpg"  wight="300" height="300" alt="Пример изображения">
+            <p class="animate">Открытки</p>
+            <img class="animate" src="e8088f8ddf2f1dfffae6b6d3cf091a1a.jpg" wight="300" height="300" alt="Пример изображения">
+        
+
+        <div style="height: 100px; "></div> 
+    </div>
+      
+    <div class="container">
+        <h1 class="animate">Особое внимание мы уделяем пленэрам на свежем воздухе, которые позволяют нашим участникам погрузиться в природу и запечатлеть её красоту на холсте. Эти выездные занятия не только обогащают опыт, но и дарят незабываемые эмоции, позволяя вдохновиться окружающим миром.</h1>
+        <img class="animate" src="9c3191bb-eab5-586e-9d7e-3fc329ef73eb.jpg" wight="400" height="400"; alt="Пример изображения">
+        <div style="height: 50px;"></div> 
+    </div>
+ 
+    <div class="container">
+        <h1 class="animate">Подготовка для поступления в художественные школы и высшие учебные заведения</h1>
+        <img class="animate" src="3476038bf2a2fd1e379855eefd20b3db.jpg" wight="200" height="200"; alt="Пример изображения">
+        <p class="animate">Акадимический рисунок головы</p>
+        <img class="animate" src="b425f711f2ae8acd564d67a374ea5c43.jpg" wight="200" height="200"; alt="Пример изображения">
+        <p class="animate">Натюрморт гуашью</p>
+        <div style="height: 100px;"></div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>© 2024 Художесвенная студия. Все права защищены.</p>
+    <p>Контактный телефон +7 (123) 456-78-90 </p>
+    <p>Социальные сети vk.ru</p>
+</footer>
+
+<style>
+
+    h1 {
+        font-size: 24px;
+        color: #251c07;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 20px;
+        border-radius: 5px;
+        transition: transform 0.2s;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+    }
+
+    .animate {
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+    }
+
+</style>
+<body>
+</html>
